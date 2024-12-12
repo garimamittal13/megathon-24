@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Depth Analysis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <style>
+        /* General body styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body {
+            background-image: url('../static/9520773.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Button styling */
+        .analysis-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 30px; /* Rounded corners */
+            margin: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Hover effect for buttons */
+        .analysis-button:hover {
+            background-color: #555;
+        }
+
+        /* Plot container styling */
+        #plot-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button class="analysis-button" onclick="window.location.href='/feedback'">
+        Feedback of Your Mood
+    </button>
+
+</body>
+</html>
